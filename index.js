@@ -8,7 +8,7 @@ let count =0;
 
 function changeimage() {
     if (count < images.length) {
-        let container = document.getElementById("background");
+        let container = document.getElementById("imagery");
         container.style.backgroundImage = 'url("' + images[count] + '")';
         count = count + 1;
     }
