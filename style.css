@@ -2,13 +2,47 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  
-
 }
 
-body{
+/* body{
+    max-width: 100%;
+    position: relative;
+    background-image: url("images/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+body {
     max-width: 100%;
 }
+
+
+#background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; /* Ensure the image stays within the body boundaries */
+    background-attachment: fixed;
+    position: relative;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    /* z-index: -1; */
+}
+
+
+ /* body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1210%;
+    background-image: url("images/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7; /* Set the desired opacity value between 0 and 1 */ 
 
 h1{
     color: white;
@@ -35,18 +69,31 @@ h1{
 }
 
 nav{
-    position: relative;
+    /* position: fixed; */
     top: 0;
-    position: fixed;
+    width: 100%;
+    /* z-index: 999; */
 }
 
 nav ul{
-    position: relative;
-    left: 555px;
+    /* position: sticky; */
+  
+    padding: 15px;
+    margin-left: 618px;
+    margin-top:-15px;
+   
+}
+
+
+/* nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
     padding: 15px;
     margin: 13px;
-    top: -6px;
-}
+    background-color: #fff;
+    z-index: 9999;
+} */
 
 
 nav ul li{
@@ -56,7 +103,7 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
-    margin: 25px;
+    margin: 20px;
     font-size: 2.5vh;
 
 }
@@ -72,7 +119,7 @@ nav ul li a{
 .search{
     float: right;
     margin-right: 73px;
-    margin-top: -4px;
+    margin-top: -42px;
 }
 
 .search input{
@@ -81,6 +128,7 @@ nav ul li a{
     background-color: white;
     height: 30px;
     text-align: center;
+    border: none;
 }
 
 nav ul li a:hover{
